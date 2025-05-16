@@ -74,15 +74,15 @@ const Header = () => {
         </h6>
 
         {/* Buttons container */}
-<div className="mt-6 flex justify-center gap-4">
-  <motion.a
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://drive.google.com/drive/folders/1Oz4J3It51dQuR84oxfewj2Ht0e8Fn0Pz?usp=drive_link"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <button className="
+        <div className="mt-6 flex justify-center gap-4">
+          <motion.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/drive/folders/1Oz4J3It51dQuR84oxfewj2Ht0e8Fn0Pz?usp=drive_link"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <button className="
       px-6 py-2 rounded-full 
       bg-gradient-to-r from-blue-500 to-cyan-600 
       text-white 
@@ -92,14 +92,14 @@ const Header = () => {
       transition-none
       flex items-center
     ">
-      <i className="fa fa-download mr-2"></i> Resume
-    </button>
-  </motion.a>
+              <i className="fa fa-download mr-2"></i> Resume
+            </button>
+          </motion.a>
 
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="
       px-6 py-2 rounded-full 
       border-2 border-blue-700 
       text-blue-700 
@@ -107,13 +107,9 @@ const Header = () => {
       hover:border-blue-700
       transition-none
     "
-  >
-    Hire Me
-  </motion.button>
-</div>
-
-
-
+          ><a href="#contact" onClick={toggleMenu}>Hire Me</a>
+          </motion.button>
+        </div>
 
       </motion.div>
     </header>

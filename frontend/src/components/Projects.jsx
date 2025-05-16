@@ -24,14 +24,14 @@ const projects = [
     live: 'https://college-social-media-production.up.railway.app'
   },
   {
-    title: 'Cart (Frontend)',
+    title: 'Cart UI',
     description: 'A shopping cart project with real-time item addition functionality, built using HTML, Tailwind CSS, and JavaScript.',
     image: './images/cart.png',
     github: 'https://github.com/Priyanshu6055/Frontend_Cart.git',
     live: 'https://frontend-cart.vercel.app/'
   },
   {
-    title: 'Pinterest (Frontend)',
+    title: 'Pinterest UI',
     description: 'Pinterest\'s interface with a dynamic search feature, enhancing content discovery using DOM manipulation.',
     image: './images/pui.png',
     github: 'https://github.com/Priyanshu6055/Pinterest-FrontEnd.git',
@@ -52,14 +52,14 @@ const projects = [
     live: 'https://netflix6055.vercel.app/'
   },
   {
-    title: 'GYM (Frontend)',
+    title: 'GYM Website UI',
     description: 'A user-friendly interface showcasing membership plans, and dynamic sections for an engaging fitness experience.',
     image: './images/gym.png',
     github: 'https://github.com/Priyanshu6055/Gym_Landing-Page.git',
     live: 'https://gym-landing-page-tan.vercel.app/'
   },
   {
-    title: 'Travel PR UI',
+    title: 'Landing Page UI',
     description: 'The Traveling Website Landing Page UI features an engaging design with HTML, CSS for stunning visuals.',
     image: './images/landingpage.png',
     github: 'https://github.com/Priyanshu6055/OIBSIP.git',
