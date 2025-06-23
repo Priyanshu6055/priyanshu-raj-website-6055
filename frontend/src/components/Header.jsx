@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Typed from 'typed.js';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useRef } from "react";
+import Typed from "typed.js";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import BubbleButton from './BubbleButton';
+
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -12,7 +14,7 @@ const Header = () => {
       strings: ["Programmer.", "Priyanshu.", "Developer.", "Creator."],
       typeSpeed: 150,
       backSpeed: 150,
-      loop: true
+      loop: true,
     });
     return () => typed.destroy();
   }, []);
@@ -36,26 +38,66 @@ const Header = () => {
         </motion.h1>
 
         <nav className="hidden md:flex space-x-8 font-medium">
-          <a href="#" className="hover:text-blue-600 transition">HOME</a>
-          <a href="#aboutContainer" className="hover:text-blue-600 transition">ABOUT</a>
-          <Link to="/projects" className="hover:text-blue-600 transition">PROJECTS</Link>
-          <a href="#contact" className="hover:text-blue-600 transition">CONTACT</a>
+          <a href="#" className="hover:text-blue-600 transition">
+            HOME
+          </a>
+          <a href="#aboutContainer" className="hover:text-blue-600 transition">
+            ABOUT
+          </a>
+          <Link to="/projects" className="hover:text-blue-600 transition">
+            PROJECTS
+          </Link>
+          <a href="#contact" className="hover:text-blue-600 transition">
+            CONTACT
+          </a>
         </nav>
 
         {/* Hamburger */}
         <div className="md:hidden cursor-pointer z-50" onClick={toggleMenu}>
-          <div className={`w-6 h-1 bg-blue-700 my-1 rounded transition-transform duration-300 ${menuVisible ? 'rotate-45 translate-y-2' : ''}`} />
-          <div className={`w-6 h-1 bg-blue-700 my-1 rounded transition-opacity duration-300 ${menuVisible ? 'opacity-0' : ''}`} />
-          <div className={`w-6 h-1 bg-blue-700 my-1 rounded transition-transform duration-300 ${menuVisible ? '-rotate-45 -translate-y-2' : ''}`} />
+          <div
+            className={`w-6 h-1 bg-blue-700 my-1 rounded transition-transform duration-300 ${
+              menuVisible ? "rotate-45 translate-y-2" : ""
+            }`}
+          />
+          <div
+            className={`w-6 h-1 bg-blue-700 my-1 rounded transition-opacity duration-300 ${
+              menuVisible ? "opacity-0" : ""
+            }`}
+          />
+          <div
+            className={`w-6 h-1 bg-blue-700 my-1 rounded transition-transform duration-300 ${
+              menuVisible ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          />
         </div>
       </div>
 
       {/* Mobile Nav */}
-      <ul className={`md:hidden mt-4 bg-white/90 rounded-lg shadow-lg p-4 space-y-3 text-blue-800 z-10 relative ${menuVisible ? 'block' : 'hidden'}`}>
-        <li><a href="#" onClick={toggleMenu}>Home</a></li>
-        <li><a href="#aboutContainer" onClick={toggleMenu}>About</a></li>
-        <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
-        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+      <ul
+        className={`md:hidden mt-4 bg-white/90 rounded-lg shadow-lg p-4 space-y-3 text-blue-800 z-10 relative ${
+          menuVisible ? "block" : "hidden"
+        }`}
+      >
+        <li>
+          <a href="#" onClick={toggleMenu}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#aboutContainer" onClick={toggleMenu}>
+            About
+          </a>
+        </li>
+        <li>
+          <Link to="/projects" onClick={toggleMenu}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <a href="#contact" onClick={toggleMenu}>
+            Contact
+          </a>
+        </li>
       </ul>
 
       {/* Hero Text */}
@@ -67,12 +109,19 @@ const Header = () => {
       >
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-800 drop-shadow">
           Hello, <br />
-          I'm <span className="text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text">Priyanshu</span> Raj
+          I'm{" "}
+          <span className="text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text">
+            Priyanshu
+          </span>{" "}
+          Raj
         </h1>
-        <h6 className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-blue-700">
-          Currently I'm Pursuing My B.E in CSE From <span className="font-semibold text-blue-500">Rabindranath Tagore University</span> (Bhopal).
+        <h6 className="mt-4 text-lg md:text-l max-w-2xl mx-auto text-blue-700">
+          <span className="font-semibold text-blue-500">Software Engineer</span>{" "}
+          with a passion for crafting impactful{" "}
+          <span className="font-semibold text-blue-500">  <br />Web applications</span>
+          . My expertise lies in creating seamless, scalable, and user-centric
+          solutions.{" "}
         </h6>
-
         {/* Buttons container */}
         <div className="mt-6 flex justify-center gap-4">
           <motion.a
@@ -82,7 +131,8 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="
+            <button
+              className="
       px-6 py-2 rounded-full 
       bg-gradient-to-r from-blue-500 to-cyan-600 
       text-white 
@@ -91,7 +141,8 @@ const Header = () => {
       hover:border-blue-700
       transition-none
       flex items-center
-    ">
+    "
+            >
               <i className="fa fa-download mr-2"></i> Resume
             </button>
           </motion.a>
@@ -107,11 +158,14 @@ const Header = () => {
       hover:border-blue-700
       transition-none
     "
-          ><a href="#contact" onClick={toggleMenu}>Hire Me</a>
+          >
+            <a href="#contact" onClick={toggleMenu}>
+              Hire Me
+            </a>
           </motion.button>
         </div>
-
       </motion.div>
+    
     </header>
   );
 };
