@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import BubbleButton from './BubbleButton';
 
 
 const Header = () => {
