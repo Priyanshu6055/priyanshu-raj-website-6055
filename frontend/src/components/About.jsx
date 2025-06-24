@@ -27,7 +27,7 @@ const About = () => {
         <p className="mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
           Hello! I'm <strong>Priyanshu Raj</strong>, a passionate web developer and tech enthusiast from India.
           <br /><br />
-          Currently working as a<strong> Full Stack Web Developmer.</strong>Completed a 6-month internship as a Full Stack Web Developer during my academics.
+          Currently working as a<strong> Full Stack Web Developmer.</strong> Completed a 6-month <strong>Internship</strong> as a Full Stack Web Developer during my academics.
           <br /><br />
           I’m dedicated to writing effective code and constantly improving my skills. Beyond coding, I enjoy
           content creation and experimenting in the kitchen.
