@@ -118,9 +118,9 @@ const Header = () => {
         <h6 className="mt-4 text-lg md:text-l max-w-2xl mx-auto text-blue-700">
           <span className="font-semibold text-blue-500">Software Engineer</span>{" "}
           with a passion for crafting impactful{" "}
-          <span className="font-semibold text-blue-500">  <br />Web applications</span>
+          <span className="font-semibold text-blue-500">  <br />Web applications </span>
           . My expertise lies in creating seamless, scalable, and user-centric
-          solutions.{" "}
+          solutions. {" "}
         </h6>
         {/* Buttons container */}
         <div className="mt-6 flex justify-center gap-4">
