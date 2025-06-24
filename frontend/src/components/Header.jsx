@@ -142,7 +142,7 @@ const Header = () => {
       transition-none
       flex items-center
     "
-            >
+            > 
               <i className="fa fa-download mr-2"></i> Resume
             </button>
           </motion.a>
