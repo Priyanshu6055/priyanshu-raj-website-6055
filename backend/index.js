@@ -16,7 +16,7 @@ app.use(helmet());
 // CORS - replace with your actual frontend URL
 app.use(
   cors({
-    origin: ["https://priyanshu-raj-website-6055.vercel.app",
+    origin: ["https://priyanshu-raj-website.vercel.app",
             "https://dr-bipin-kumar-astrologer.vercel.app"
             ],
     methods: ["POST"],
